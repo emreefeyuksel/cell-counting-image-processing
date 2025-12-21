@@ -115,7 +115,7 @@ plt.tight_layout()
 plt.savefig('method3_Blobs.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# ----COMPARISON OF ALL METHODS----
+#COMPARISON OF ALL METHODS
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
 #Hough
 axes[0].imshow(cv2.cvtColor(output, cv2.COLOR_BGR2RGB))
@@ -137,4 +137,5 @@ plt.show()
 print("\nFinal Counts:") #Outputs for all methods
 print(f"Method 1 (Hough): {hough_count}")
 print(f"Method 2 (Canny): {count2}")
+
 print(f"Method 3 (Connected Components): {count3}")
